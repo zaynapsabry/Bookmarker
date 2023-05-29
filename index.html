@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="CRUD System" />
+    <meta name="keywords" content="crud , bookmark " />
+    <meta name="author" content="AHMED MENISY(Route)" />
+
+    <!-- FontAwesome6.2 Css File  -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- BootStrap 5.3 Css File  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Custome Css File -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <main class="container pt-3 pb-4">
+      <!-- book area  -->
+      <header class="book-inputs">
+        <!-- main title  -->
+        <h1 class="text-center fw-bold text-white">Bookmarker App</h1>
+        <section class="book-custom rounded-3 p-4 vstack gap-4">
+          <div>
+            <label for="siteName" class="form-label">Site Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="siteName"
+              placeholder="BookMark Name..."
+            />
+            <p class="alert alert-danger d-none" id="alertName">
+              Name Is Required
+            </p>
+          </div>
+
+          <div>
+            <label for="siteUrl" class="form-label">Site URL:</label>
+            <input
+              type="url"
+              class="form-control"
+              id="siteUrl"
+              placeholder="Website URL..."
+            />
+            <p class="alert alert-danger d-none" id="alertUrl">
+              Url Is Required
+            </p>
+            <p class="alert alert-danger d-none" id="alertExite">
+              Url Is Exite
+            </p>
+          </div>
+
+          <button class="btn btn-primary mt-4" id="btnAdd">Add Bookmark</button>
+          <button class="btn btn-warning mt-4 d-none" id="btnUpdate">
+            Update Bookmark
+          </button>
+        </section>
+      </header>
+
+      <!-- section data  -->
+      <section class="book-data">
+        <input
+          type="search"
+          class="form-control form-control-sm w-50 mx-auto my-3"
+          placeholder="Search..."
+          id="searchBook"
+        />
+
+        <div class="table-responsive book-custom p-3">
+          <table class="table table-sm mb-0 text-nowrap table-info text-center">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">URL</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

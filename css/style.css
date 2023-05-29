@@ -1,0 +1,44 @@
+/* ----------------- Start Global ----------------- */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900;1000&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  z-index: 1;
+  background-color: #0e4166;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0e4166;
+  box-shadow: 0 0 2px inset #00000079;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #125e7c;
+  box-shadow: 0 0 10px 10px #125e7c;
+}
+
+.book-custom {
+  background-color: #0b3452;
+  color: #fff;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 4px #3f9ec39a;
+  caret-color: #2f6f88;
+}
+
+.btn-primary {
+  --bs-btn-bg: #3080a2;
+  --bs-btn-border-color: rgba(26, 82, 104, 0.836);
+  --bs-btn-hover-bg: #3080a2;
+}
